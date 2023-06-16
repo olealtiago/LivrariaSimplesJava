@@ -1,0 +1,9 @@
+Run catalina.bat (if windows, else if linux use catalina.sh)
+  cd C:\apache-tomcat-9.0.75\bin
+  PS C:\apache-tomcat-9.0.75\bin> .\catalina.bat run
+
+To run use this command:
+mvn exec:java -D"exec.mainClass"="br.ufscar.dc.dsw.AcessaBD" -D"exec.cleanupDaemonThreads"=false
+
+If needs show in http://localhost:8080/Livraria/ use:
+mvn tomcat7:redeploy
